@@ -4,6 +4,33 @@ This is an **unofficial SA-MP Clientside Anticheat (SAMPCAC) documentation** rep
 # Welcome to SAMPCAC documentation
 This site contains all information needed to set up and run a SAMPCAC protected server.
 
+## About
+### SA-MP Clientside AntiCheat 
+Brand new clientside anticheat for SA-MP, designed to detect and report cheaters to the server they are connected to. SAMPCAC is aiming to be a replacement for old heavy, unstable anticheat softwares
+![](https://github.com/ins1x/sampcac-docs/blob/main/scriptfiles/img/server-console.png)  
+
+### Features
+**NO CRASHES Crashes are annoying, aren't they?**  
+That's why our software is carefully tested before it gets released, so our users won't (or shouldn't) experience any issues.   
+
+**LIGHTWEIGHT AND FAST**  
+We know how important is that 90+ FPS in top corner for you, so SAMPCAC developers are constantly trying their best to keep that number unchanged.  
+
+**COMMUNITY-DRIVEN**  
+SAMPCAC is a mod by players for ehm... players AND servers. We listen to all our users' suggestions and we are open to discussions.  
+
+**MODULAR ANTICHEAT**  
+SAMPCAC is pretty much fully toggleable from serverside. See sampcac.inc for a list of detected cheats. 
+
+![](https://github.com/ins1x/sampcac-docs/blob/main/scriptfiles/img/sampcac_test.jpg)  
+
+* You don't want your players use macros? Enable macro reporting!
+* You don't want your players abuse C-Bug or see radar blips? Disable them!
+* You don't want your players use m0d_s0beit_sa? Well, this mod is disabled by default and can't be enabled :(
+* Not enough protections? Detect many more specific cheats using CAC_ReadMemory.
+
+> Note for server owners: SAMPCAC won't take any action against cheaters by itself, you have to explicitly script these actions. Fortunately, server package comes with 6 filterscripts ready to take care of it for yourself. See above. For further information, check out SAMPCAC documentation here!
+
 ### Setting up a basic server
 
 1. Download the [latest SAMPCAC server package](https://github.com/ins1x/sampcac-docs/releases/tag/release);
@@ -48,6 +75,7 @@ action=warning    # action to be taked on screenshot spam: [warning/kick/ban]
 Edit without restart: All you have to do is edit scriptfiles/sampcac_base.ini and use /rcon reloadfs sampcac_base while logged in as RCON.  
 
 ### sampcac_glitch.pwn
+![](https://github.com/ins1x/sampcac-docs/blob/main/scriptfiles/img/toggle-glitch.png)  
 This filterscript is responsible for disabling certain GTA:SA glitches.  
 
 Configuration: scriptfiles/sampcac_glitch.ini
@@ -115,6 +143,7 @@ ped_ifp=on
 Edit without restart: All you have to do is edit scriptfiles/sampcac_gameresource.ini and use /rcon reloadfs sampcac_gameresource while logged in as RCON.
 
 ### sampcac_only.pwn
+![](https://github.com/ins1x/sampcac-docs/blob/main/scriptfiles/img/sampcac-only.png)  
 Only clients with SAMPCAC installed can join your server.  
 
 > Configuration: no configuration needed  
