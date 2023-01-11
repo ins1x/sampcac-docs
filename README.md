@@ -6,7 +6,8 @@ This site contains all information needed to set up and run a SAMPCAC protected 
 
 ## About
 ### SA-MP Clientside AntiCheat 
-Brand new clientside anticheat for SA-MP, designed to detect and report cheaters to the server they are connected to. SAMPCAC is aiming to be a replacement for old heavy, unstable anticheat softwares
+Brand new clientside anticheat for SA-MP, designed to detect and report cheaters to the server they are connected to. SAMPCAC is aiming to be a replacement for old heavy, unstable anticheat softwares.
+
 ![](https://github.com/ins1x/sampcac-docs/blob/main/scriptfiles/img/server-console.png)  
 
 ### Features
@@ -28,6 +29,11 @@ SAMPCAC is pretty much fully toggleable from serverside. See sampcac.inc for a l
 * You don't want your players abuse C-Bug or see radar blips? Disable them!
 * You don't want your players use m0d_s0beit_sa? Well, this mod is disabled by default and can't be enabled :(
 * Not enough protections? Detect many more specific cheats using CAC_ReadMemory.
+* Require all players have SAMPCAC installed? Load sampcac_only.amx.
+* Configure cheat detection? (MUST BE LOADED) Load sampcac_base.amx and edit sampcac_base.ini.
+* Disable certain glitches? (eg: C-Bug) Load sampcac_glitch.amx and edit sampcac_glitch.ini.
+* Toggle game options? (eg: inf. sprint or manual gun reloading) Load and configure sampcac_gameoption.amx.
+* Monitor modded resources? (eg: skins or transparent textures) Load and configure sampcac_gameresource.amx.
 
 > Note for server owners: SAMPCAC won't take any action against cheaters by itself, you have to explicitly script these actions. Fortunately, server package comes with 6 filterscripts ready to take care of it for yourself. See above. For further information, check out SAMPCAC documentation here!
 
