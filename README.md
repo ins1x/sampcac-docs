@@ -163,6 +163,12 @@ Warn players that they're using an outdated version of SAMPCAC client before kic
 
 Disable without restart: Use /rcon unloadfs sampcac_versioncheck while logged in as RCON.
 
+### sampcac_memread_example.pwn
+
+Working examples of using the memory read function. [sampcac_memread_example](https://github.com/ins1x/sampcac-docs/blob/main/filterscripts/sampcac_memread_example.pwn)  
+
+> Configuration: no configuration needed 
+
 ### Problem-solving
 SAMPCAC requirements SA-MP Client [version 0.3.7 R1](https://dracoblue.net/files/sa-mp-0.3.7-install.exe).  
 
@@ -187,10 +193,7 @@ Reinstall the client and try running SA:MP as an administrator.
 - The game does not start on Windows10 / Windows11 (no crash)
 > On a Windows 10 system, the old DirectPlay must be enabled. To do this, go to "Control Panel » Programs » Uninstall Programs » Turn Windows features on or off" and check "Legacy Components and DirectPlay".
 
-## Extra
-SA-MP Clientside Anticheat cannot run under a Virtual Machine. [How to Disable Hyper-V](https://www.eightforums.com/tutorials/42041-hyper-v-enable-disable-windows-8-a.html)  
-
-Working examples of using the memory read function.
-Filterscript: [sampcac_memread_example](https://github.com/ins1x/sampcac-docs/blob/main/filterscripts/sampcac_memread_example.pwn)  
+- SA-MP Clientside Anticheat cannot run under a Virtual Machine. 
+> [How to Disable Hyper-V](https://www.eightforums.com/tutorials/42041-hyper-v-enable-disable-windows-8-a.html)  
 
 ### This is an unofficial SA-MP Clientside Anticheat (SAMPCAC) documentation repository.
