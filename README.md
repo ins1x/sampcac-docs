@@ -1,2 +1,133 @@
-# sampcac-docs
-SA-MP Clientside Anticheat (SAMPCAC) Documentation (Archive)
+# Disclaimer
+This is an **unofficial SA-MP Clientside Anticheat (SAMPCAC) documentation** repository. All rights belong to the authors and are provided here for informational purposes only. SAMPCAC Author: 0xCAC. The official https://SAMPCAC.xyz/docs site has been unavailable for a long time and this repository was created to help you with development. *There is no source code here, only binaries and documentation*. 
+
+# Welcome to SAMPCAC documentation
+This site contains all information needed to set up and run a SAMPCAC protected server.
+
+### Setting up a basic server
+
+1. Download the latest SAMPCAC server package from main page;
+2. Copy its full content in the root of SA-MP server, respecting the directory layout;
+3. Open server.cfg and append to plugins line:
+    - sampcac_server.so (for Linux servers);
+    - sampcac_server.dll (for Windows servers);
+4. Now, add the following filterscripts:
+    - sampcac_base (WARNING: SAMPCAC won't take any action against cheaters without this filterscripts loaded!);
+    - sampcac_glitch (allows you to disable certain GTA:SA glitches (like C-Bug));
+    - sampcac_gameoption (allows you to toggle certain options (like vehicle blips on radar));
+    - sampcac_gameresource (allows you to detect game modifications (like modified skins));
+    - sampcac_only (only clients with SAMPCAC installed can join your server);
+    - sampcac_versioncheck (warn players that they're using an outdated version of SAMPCAC client before kicking them);
+(for more information regarding filterscripts, see filterscripts article);
+5. Head to scriptfiles and edit sampcac_base.ini, sampcac_glitch.ini, sampcac_gameoption.ini and sampcac_gameresource.ini according to your needs;
+6. Start the server!
+
+### Further assistance
+Check out sample filterscripts source code for more implementation details.  
+
+### Extra
+SA-MP Clientside Anticheat cannot run under a Virtual Machine.  
+Fix: [Disable Hyper-V](https://www.eightforums.com/tutorials/42041-hyper-v-enable-disable-windows-8-a.html)
+
+# Filterscripts
+### sampcac_base.pwn
+
+This filterscript is responsible for handling cheat reports coming from SAMPCAC plugin.  
+
+> IMPORTANT: MUST BE LOADED! unless you write your own cheat handler  
+```
+Configuration: scriptfiles/sampcac_base.ini
+[aimbot_1]        # cheat name as defined in "sampcac_base.pwn"
+status=on         # detection status: [on/off]
+action=kick       # action to be taked on detection: [warning/kick/ban]
+
+[screenshot]      # cheat name as defined in "sampcac_base.pwn"
+status=on         # should players get punished for taking too many screenshots?
+max_screenshots=1 # how many screenshots may a player take
+reset_time=1000   # players can take screenshots again after this time (in ms) has passed 
+action=warning    # action to be taked on screenshot spam: [warning/kick/ban]
+
+[macro_key_detection] # enable/disable certain macro key detections (see sampcac_base.ini for more information) 
+```
+Edit without restart: All you have to do is edit scriptfiles/sampcac_base.ini and use /rcon reloadfs sampcac_base while logged in as RCON.  
+
+### sampcac_glitch.pwn
+This filterscript is responsible for disabling certain GTA:SA glitches.  
+
+Configuration: scriptfiles/sampcac_glitch.ini
+```
+NOTE: Default configuration disables C-Bug, Fast Sprint and Fast Fire.
+NOTE: For further documentation, see GTA:SA glitch natives.
+
+[glitch]          # this is the default configuration
+quick_reload=on   # I guess it's pretty straight-forward and doesn't need any explanation
+fast_fire=off
+fast_move=on
+c_bug=off
+fast_sprint=off
+quick_stand=on
+```
+Edit without restart: All you have to do is edit scriptfiles/sampcac_glitch.ini and use /rcon reloadfs sampcac_glitch while logged in as RCON.  
+
+### sampcac_gameoption.pwn
+This filterscript is responsible for toggling certain game options.  
+
+Configuration: scriptfiles/sampcac_gameoption.ini
+```
+NOTE: See sampcac.inc for a full list of toggleable game options.
+NOTE: For further documentation, see game option natives.
+
+[gameoption]         # this is the default configuration
+vehicle_blips=on     # I guess it's pretty straight-forward and doesn't need any explanation 
+manual_reloading=on
+drive_on_water=off
+fireproof=on
+sprint=all_surfaces
+infinite_sprint=on
+infinite_oxygen=on
+infinite_ammo=off
+night_vision=off
+thermal_vision=off
+```
+Edit without restart: All you have to do is edit scriptfiles/sampcac_gameoption.ini and use /rcon reloadfs sampcac_gameoption while logged in as RCON.  
+
+### sampcac_gameresource.pwn
+This filterscript is responsible for detecting game modifications.  
+
+Configuration: scriptfiles/sampcac_gameresource.ini
+```
+NOTE: Currently, only peds, vehicles, weapons, object models and ped.ifp modifications are detectable.
+NOTE: For further documentation, see game resource checks natives.
+
+[gamemodels]
+# disabled       = no reports regarding modded game models
+# only_if_modded = will notify the server only once if player got modded game models (good for saving bandwidth)
+# full           = detailed report about the mod: model id, component (dff, txd, anim or ped.ifp) and modded file checksum (not recommended when players have a lot of mods)
+type=full
+
+# possible values: warning kick ban
+action=warning
+
+# adjust following options in order to enable/disable specific game models reports
+skins=on
+vehicles=off
+weapons=off
+# "others" means everything else that is not stated above (eg: buildings, fences, streets etc)
+others=on
+ped_ifp=on
+```
+Edit without restart: All you have to do is edit scriptfiles/sampcac_gameresource.ini and use /rcon reloadfs sampcac_gameresource while logged in as RCON.
+
+### sampcac_only.pwn
+Only clients with SAMPCAC installed can join your server.  
+
+> Configuration: no configuration needed  
+
+Disable without restart: Use /rcon unloadfs sampcac_only while logged in as RCON.
+
+### sampcac_versioncheck.pwn
+Warn players that they're using an outdated version of SAMPCAC client before kicking them.  
+
+> Configuration: no configuration needed  
+
+Disable without restart: Use /rcon unloadfs sampcac_versioncheck while logged in as RCON.
