@@ -8,16 +8,16 @@ This site contains all information needed to set up and run a SAMPCAC protected 
 
 1. Download the latest SAMPCAC server package from main page;
 2. Copy its full content in the root of SA-MP server, respecting the directory layout;
-3. Open server.cfg and append to plugins line:
+3. Open [server.cfg](https://www.open.mp/docs/server/server.cfg) and append to plugins line:
     - sampcac_server.so (for Linux servers);
     - sampcac_server.dll (for Windows servers);
 4. Now, add the following filterscripts:
-    - sampcac_base (WARNING: SAMPCAC won't take any action against cheaters without this filterscripts loaded!);
-    - sampcac_glitch (allows you to disable certain GTA:SA glitches (like C-Bug));
-    - sampcac_gameoption (allows you to toggle certain options (like vehicle blips on radar));
-    - sampcac_gameresource (allows you to detect game modifications (like modified skins));
-    - sampcac_only (only clients with SAMPCAC installed can join your server);
-    - sampcac_versioncheck (warn players that they're using an outdated version of SAMPCAC client before kicking them);
+    - [sampcac_base](https://github.com/ins1x/sampcac-docs/blob/main/filterscripts/sampcac_base.pwn) (WARNING: SAMPCAC won't take any action against cheaters without this filterscripts loaded!);
+    - [sampcac_glitch](https://github.com/ins1x/sampcac-docs/blob/main/filterscripts/sampcac_glitch.pwn) (allows you to disable certain GTA:SA glitches (like C-Bug));
+    - [sampcac_gameoption](https://github.com/ins1x/sampcac-docs/blob/main/filterscripts/sampcac_gameoption.pwn) (allows you to toggle certain options (like vehicle blips on radar));
+    - [sampcac_gameresource](https://github.com/ins1x/sampcac-docs/blob/main/filterscripts/sampcac_gameresource.pwn) (allows you to detect game modifications (like modified skins));
+    - [sampcac_only](https://github.com/ins1x/sampcac-docs/blob/main/filterscripts/sampcac_only.pwn) (only clients with SAMPCAC installed can join your server);
+    - [sampcac_versioncheck](https://github.com/ins1x/sampcac-docs/blob/main/filterscripts/sampcac_versioncheck.pwn) (warn players that they're using an outdated version of SAMPCAC client before kicking them);
 (for more information regarding filterscripts, see filterscripts article);
 5. Head to scriptfiles and edit sampcac_base.ini, sampcac_glitch.ini, sampcac_gameoption.ini and sampcac_gameresource.ini according to your needs;
 6. Start the server!
@@ -129,8 +129,7 @@ Warn players that they're using an outdated version of SAMPCAC client before kic
 Disable without restart: Use /rcon unloadfs sampcac_versioncheck while logged in as RCON.
 
 ### Extra
-SA-MP Clientside Anticheat cannot run under a Virtual Machine.  
-[How to Disable Hyper-V](https://www.eightforums.com/tutorials/42041-hyper-v-enable-disable-windows-8-a.html)  
+SA-MP Clientside Anticheat cannot run under a Virtual Machine. [How to Disable Hyper-V](https://www.eightforums.com/tutorials/42041-hyper-v-enable-disable-windows-8-a.html)  
 
 Working examples of using the memory read function.
 Filterscript: [sampcac_memread_example](https://github.com/ins1x/sampcac-docs/blob/main/filterscripts/sampcac_memread_example.pwn)  
