@@ -128,7 +128,7 @@ Warn players that they're using an outdated version of SAMPCAC client before kic
 
 Disable without restart: Use /rcon unloadfs sampcac_versioncheck while logged in as RCON.
 
-### Extra
+## Extra
 SA-MP Clientside Anticheat cannot run under a Virtual Machine. [How to Disable Hyper-V](https://www.eightforums.com/tutorials/42041-hyper-v-enable-disable-windows-8-a.html)  
 
 Working examples of using the memory read function.
