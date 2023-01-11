@@ -169,7 +169,7 @@ Working examples of using the memory read function. [sampcac_memread_example](ht
 
 > Configuration: no configuration needed 
 
-### Problem-solving
+## Problem-solving
 SAMPCAC requirements SA-MP Client [version 0.3.7 R1](https://dracoblue.net/files/sa-mp-0.3.7-install.exe).  
 
 The most common problems and their solutions:
