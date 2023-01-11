@@ -1,5 +1,5 @@
 # Disclaimer
-This is an **unofficial SA-MP Clientside Anticheat (SAMPCAC) documentation** repository. All rights belong to the author 0xCAC and are provided here for informational purposes only. The official https://SAMPCAC.xyz/docs site has been unavailable for a long time and this repository was created to help you with development. **There is no source code here, only binaries and documentation!** 
+This is an **unofficial SA-MP Clientside Anticheat (SAMPCAC) documentation** repository. All rights belong to the author **0xCAC** and are provided here for informational purposes only. The official https://SAMPCAC.xyz/docs site has been unavailable for a long time and this repository was created to help you with development. **There is no source code here, only binaries and documentation!** 
 
 ## About
 ### SA-MP Clientside AntiCheat 
@@ -168,3 +168,7 @@ SA-MP Clientside Anticheat cannot run under a Virtual Machine. [How to Disable H
 
 Working examples of using the memory read function.
 Filterscript: [sampcac_memread_example](https://github.com/ins1x/sampcac-docs/blob/main/filterscripts/sampcac_memread_example.pwn)  
+
+---
+
+### This is an unofficial SA-MP Clientside Anticheat (SAMPCAC) documentation repository.
