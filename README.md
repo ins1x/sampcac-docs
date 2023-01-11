@@ -6,7 +6,7 @@ This site contains all information needed to set up and run a SAMPCAC protected 
 
 ### Setting up a basic server
 
-1. Download the latest SAMPCAC server package from main page;
+1. Download the [latest SAMPCAC server package](https://github.com/ins1x/sampcac-docs/releases/tag/release);
 2. Copy its full content in the root of SA-MP server, respecting the directory layout;
 3. Open [server.cfg](https://www.open.mp/docs/server/server.cfg) and append to plugins line:
     - sampcac_server.so (for Linux servers);
