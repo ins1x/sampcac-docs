@@ -1,5 +1,5 @@
 # Disclaimer
-This is an **unofficial SA-MP Clientside Anticheat (SAMPCAC) documentation** repository. All rights belong to the authors and are provided here for informational purposes only. SAMPCAC Author: 0xCAC. The official https://SAMPCAC.xyz/docs site has been unavailable for a long time and this repository was created to help you with development. *There is no source code here, only binaries and documentation*. 
+This is an **unofficial SA-MP Clientside Anticheat (SAMPCAC) documentation** repository. All rights belong to the author 0xCAC and are provided here for informational purposes only. The official https://SAMPCAC.xyz/docs site has been unavailable for a long time and this repository was created to help you with development. *There is no source code here, only binaries and documentation*!. 
 
 # Welcome to SAMPCAC documentation
 This site contains all information needed to set up and run a SAMPCAC protected server.
@@ -23,7 +23,8 @@ This site contains all information needed to set up and run a SAMPCAC protected 
 6. Start the server!
 
 ### Further assistance
-Check out sample filterscripts source code for more implementation details.  
+Check out [sample filterscripts](https://github.com/ins1x/sampcac-docs/tree/main/filterscripts) source code for more implementation details.  
+[sampcac.inc](https://github.com/ins1x/sampcac-docs/blob/main/pawno/include/sampcac.inc)
 
 ### Extra
 SA-MP Clientside Anticheat cannot run under a Virtual Machine.  
