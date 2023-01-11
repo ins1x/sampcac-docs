@@ -1,9 +1,6 @@
 # Disclaimer
 This is an **unofficial SA-MP Clientside Anticheat (SAMPCAC) documentation** repository. All rights belong to the author 0xCAC and are provided here for informational purposes only. The official https://SAMPCAC.xyz/docs site has been unavailable for a long time and this repository was created to help you with development. **There is no source code here, only binaries and documentation!** 
 
-# Welcome to SAMPCAC documentation
-This site contains all information needed to set up and run a SAMPCAC protected server.
-
 ## About
 ### SA-MP Clientside AntiCheat 
 Brand new clientside anticheat for SA-MP, designed to detect and report cheaters to the server they are connected to. SAMPCAC is aiming to be a replacement for old heavy, unstable anticheat softwares.
@@ -36,6 +33,9 @@ SAMPCAC is pretty much fully toggleable from serverside. See sampcac.inc for a l
 * Monitor modded resources? (eg: skins or transparent textures) Load and configure sampcac_gameresource.amx.
 
 > Note for server owners: SAMPCAC won't take any action against cheaters by itself, you have to explicitly script these actions. Fortunately, server package comes with 6 filterscripts ready to take care of it for yourself. See above. For further information, check out SAMPCAC documentation here!
+
+# Welcome to SAMPCAC documentation
+This repo contains all information needed to set up and run a SAMPCAC protected server.
 
 ### Setting up a basic server
 
