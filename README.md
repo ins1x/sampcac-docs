@@ -1,5 +1,5 @@
 # Disclaimer
-This is an **unofficial SA-MP Clientside Anticheat (SAMPCAC) documentation** repository. All rights belong to the author 0xCAC and are provided here for informational purposes only. The official https://SAMPCAC.xyz/docs site has been unavailable for a long time and this repository was created to help you with development. *There is no source code here, only binaries and documentation*!. 
+This is an **unofficial SA-MP Clientside Anticheat (SAMPCAC) documentation** repository. All rights belong to the author 0xCAC and are provided here for informational purposes only. The official https://SAMPCAC.xyz/docs site has been unavailable for a long time and this repository was created to help you with development. **There is no source code here, only binaries and documentation!** 
 
 # Welcome to SAMPCAC documentation
 This site contains all information needed to set up and run a SAMPCAC protected server.
@@ -23,12 +23,7 @@ This site contains all information needed to set up and run a SAMPCAC protected 
 6. Start the server!
 
 ### Further assistance
-Check out [sample filterscripts](https://github.com/ins1x/sampcac-docs/tree/main/filterscripts) source code for more implementation details.  
-[sampcac.inc](https://github.com/ins1x/sampcac-docs/blob/main/pawno/include/sampcac.inc)
-
-### Extra
-SA-MP Clientside Anticheat cannot run under a Virtual Machine.  
-Fix: [Disable Hyper-V](https://www.eightforums.com/tutorials/42041-hyper-v-enable-disable-windows-8-a.html)
+Check out [sample filterscripts](https://github.com/ins1x/sampcac-docs/tree/main/filterscripts) and [sampcac.inc](https://github.com/ins1x/sampcac-docs/blob/main/pawno/include/sampcac.inc) source code for more implementation details.  
 
 # Filterscripts
 ### sampcac_base.pwn
@@ -132,3 +127,10 @@ Warn players that they're using an outdated version of SAMPCAC client before kic
 > Configuration: no configuration needed  
 
 Disable without restart: Use /rcon unloadfs sampcac_versioncheck while logged in as RCON.
+
+### Extra
+SA-MP Clientside Anticheat cannot run under a Virtual Machine.  
+[How to Disable Hyper-V](https://www.eightforums.com/tutorials/42041-hyper-v-enable-disable-windows-8-a.html)  
+
+Working examples of using the memory read function.
+Filterscript: [sampcac_memread_example](https://github.com/ins1x/sampcac-docs/blob/main/filterscripts/sampcac_memread_example.pwn)  
