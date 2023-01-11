@@ -163,31 +163,29 @@ Warn players that they're using an outdated version of SAMPCAC client before kic
 
 Disable without restart: Use /rcon unloadfs sampcac_versioncheck while logged in as RCON.
 
-## Client requirements 
-1. Clean GTA SA without mods.
-2. SA-MP Client [version 0.3.7 R1](https://dracoblue.net/files/sa-mp-0.3.7-install.exe)
-
 ### Problem-solving
-The most common problems and their solutions:  
+SAMPCAC requirements SA-MP Client [version 0.3.7 R1](https://dracoblue.net/files/sa-mp-0.3.7-install.exe).  
 
-> SAMPCAC installer gives Windows version mismatch error
-- Download sampcac_client.asi separately, or run the installer in Windows XP compatibility mode (Service pack 3).
+The most common problems and their solutions:
 
-> After connecting not reaching the skin selection, crash with format codes 0x06XXXXXXX where X are arbitrary characters
-- Reinstall the SA-MP client through the original installer (not by changing the files)
+- SAMPCAC installer gives Windows version mismatch error
+> Download sampcac_client.asi separately, or run the installer in Windows XP compatibility mode (Service pack 3).
 
-> Error when clicking "Connect" button in SA-MP client. 0x0040fB80 or similar.
-- Install sa-mp 0.3.7 client again and change version of GTA_SA.exe to US 1.0
+- After connecting not reaching the skin selection, crash with format codes 0x06XXXXXXX where X are arbitrary characters
+> Reinstall the SA-MP client through the original installer (not by changing the files)
 
-> Black screen.
-- Delete the gta_sa.set file from the GTA San Andreas User Files folder
+- Error when clicking "Connect" button in SA-MP client. 0x0040fB80 or similar.
+> Install sa-mp 0.3.7 client again and change version of GTA_SA.exe to US 1.0
 
-> 0x0059F8B4
-- Crash occurs when the client cannot load any object on the server from samp.img.
+- Black screen.
+> Delete the gta_sa.set file from the GTA San Andreas User Files folder
+
+- 0x0059F8B4
+> Crash occurs when the client cannot load any object on the server from samp.img.
 Reinstall the client and try running SA:MP as an administrator.
 
-> The game does not start on Windows10 / Windows11 (no crash)
-- On a Windows 10 system, the old DirectPlay must be enabled. To do this, go to "Control Panel » Programs » Uninstall Programs » Turn Windows features on or off" and check "Legacy Components and DirectPlay".
+- The game does not start on Windows10 / Windows11 (no crash)
+> On a Windows 10 system, the old DirectPlay must be enabled. To do this, go to "Control Panel » Programs » Uninstall Programs » Turn Windows features on or off" and check "Legacy Components and DirectPlay".
 
 ## Extra
 SA-MP Clientside Anticheat cannot run under a Virtual Machine. [How to Disable Hyper-V](https://www.eightforums.com/tutorials/42041-hyper-v-enable-disable-windows-8-a.html)  
