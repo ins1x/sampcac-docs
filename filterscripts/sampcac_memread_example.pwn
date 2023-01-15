@@ -1,10 +1,7 @@
 /*
- * SA-MP Clientside Anticheat (SAMPCAC)
- * Version:         v0.10.0
- * Author:          1NS
+ * SA-MP Clientside Anticheat (SAMPCAC) v0.10.0
+ * Filterscript Author: 1NS
  * Compatible with: SA-MP 0.3.7 Server
- * Site:            https://SAMPCAC.xyz
- * Documentation:   https://SAMPCAC.xyz/docs
  *
  * Warning:         DON'T USE THIS FILTERSCRIPT ON A LIVE SERVER!
  *
