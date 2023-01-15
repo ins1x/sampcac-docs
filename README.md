@@ -163,6 +163,12 @@ Warn players that they're using an outdated version of SAMPCAC client before kic
 
 Disable without restart: Use /rcon unloadfs sampcac_versioncheck while logged in as RCON.
 
+### sampcac_clientcheck.pwn
+Checks the client version and displays messages about the need to update or install anti-cheat.  
+(This is an improved version of the sampcac_versioncheck.pwn script)  
+
+> Configuration: no configuration needed  
+
 ### sampcac_memread_example.pwn
 
 Working examples of using the memory read function. [sampcac_memread_example](https://github.com/ins1x/sampcac-docs/blob/main/filterscripts/sampcac_memread_example.pwn)  
